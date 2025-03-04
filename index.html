@@ -1,173 +1,153 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TKagency hjælper dig med at skabe den perfekte hjemmeside til din virksomhed. Vi tilbyder professionelt webdesign og udvikling.">
-  <title>TKagency</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    /* Global styles */
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #333;
-    }
-
-    /* Header */
-    header {
-      background: linear-gradient(45deg, #ff6f61, #ff9f55);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3.5em;
-      letter-spacing: 2px;
-    }
-    header p {
-      font-size: 1.3em;
-      font-weight: 300;
-    }
-
-    /* Main content */
-    .main-content {
-      padding: 50px;
-      background-color: #ffffff;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: -30px;
-    }
-
-    .section-title {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #ff6f61;
-    }
-
-    /* Service cards */
-    .service-card {
-      display: inline-block;
-      width: 30%;
-      margin: 20px;
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Project section */
-    .portfolio {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .portfolio div {
-      width: 30%;
-      margin: 15px;
-      transition: transform 0.3s ease;
-    }
-    .portfolio div:hover {
-      transform: scale(1.05);
-    }
-    .portfolio img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-    .portfolio img:hover {
-      opacity: 0.8;
-    }
-
-    /* Call-to-action button */
-    .cta-button {
-      background-color: #ff6f61;
-      color: white;
-      font-size: 1.2em;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #ff4d43;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #1e1e1e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TKagency - Professionel webdesign og udvikling">
+    <title>TKagency - Skab Din Perfekte Hjemmeside</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #1e1e1e;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(45deg, #ff6f61, #ff9f55);
+        }
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+        .btn {
+            background: #fff;
+            color: #ff6f61;
+            padding: 15px 30px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff4d43;
+            color: white;
+        }
+        section {
+            padding: 100px 50px;
+            text-align: center;
+        }
+        .services, .portfolio {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .card {
+            background: #333;
+            padding: 30px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="#services">Vores Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
 
-<!-- Header -->
-<header>
-  <h1>Velkommen til TKagency</h1>
-  <p>Vi hjælper dig med at skabe den perfekte hjemmeside for din virksomhed.</p>
-</header>
+    <header>
+        <h1>Velkommen til TKagency</h1>
+        <p>Vi skaber moderne, professionelle hjemmesider, der får din virksomhed til at skinne.</p>
+        <button class="btn" onclick="location.href='#contact'">Kontakt os</button>
+    </header>
 
-<!-- Main content -->
-<div class="main-content">
-  <h2 class="section-title">Vores Services</h2>
-  <div class="service-card">
-    <h3>Webdesign</h3>
-    <p>Vi designer brugerdefinerede hjemmesider, der skaber et stærkt førstehåndsindtryk.</p>
-  </div>
-  <div class="service-card">
-    <h3>Udvikling</h3>
-    <p>Vi udvikler funktionelle og responsive hjemmesider, der fungerer på alle enheder.</p>
-  </div>
-  <div class="service-card">
-    <h3>Vedligeholdelse</h3>
-    <p>Vi sørger for, at din hjemmeside er opdateret og fungerer optimalt hele tiden.</p>
-  </div>
-</div>
+    <section id="services">
+        <h2>Vores Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Webdesign</h3>
+                <p>Vi skaber smukke og brugervenlige designs.</p>
+            </div>
+            <div class="card">
+                <h3>Udvikling</h3>
+                <p>Moderne og responsive hjemmesider.</p>
+            </div>
+            <div class="card">
+                <h3>SEO & Marketing</h3>
+                <p>Vi optimerer din online tilstedeværelse.</p>
+            </div>
+        </div>
+    </section>
 
-<!-- Portfolio Section -->
-<div class="main-content portfolio">
-  <h2 class="section-title">Vores Projekter</h2>
-  <div>
-    <img src="https://via.placeholder.com/400x250" alt="Projekteksempel 1">
-    <p>Projekt 1 - Hjemmeside for en lokal virksomhed.</p>
-  </div>
-  <div>
-    <img src="https://via.placeholder.com/400x250" alt="Projekteksempel 2">
-    <p>Projekt 2 - E-handelsløsning med funktioner som kundelogin og betalingssystem.</p>
-  </div>
-  <div>
-    <img src="https://via.placeholder.com/400x250" alt="Projekteksempel 3">
-    <p>Projekt 3 - Portfolio-site for kreative fagfolk.</p>
-  </div>
-</div>
+    <section id="portfolio">
+        <h2>Vores Projekter</h2>
+        <div class="portfolio">
+            <div class="card">
+                <p>Projekt 1 - Business website</p>
+            </div>
+            <div class="card">
+                <p>Projekt 2 - E-commerce platform</p>
+            </div>
+            <div class="card">
+                <p>Projekt 3 - Portfolio site</p>
+            </div>
+        </div>
+    </section>
 
-<!-- Call to Action -->
-<div class="main-content">
-  <button class="cta-button" onclick="window.location.href='mailto:info@tkagency.dk';">Kontakt os nu</button>
-</div>
+    <section id="contact">
+        <h2>Kontakt Os</h2>
+        <p>Email: info@tkagency.dk</p>
+    </section>
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 TKagency. Alle rettigheder forbeholdes.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 TKagency - Alle rettigheder forbeholdes.</p>
+    </footer>
 </body>
 </html>
