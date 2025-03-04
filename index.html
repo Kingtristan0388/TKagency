@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Velkommen til TKagency – din professionelle partner i digital markedsføring.">
+  <meta name="description" content="TKagency hjælper dig med at skabe den perfekte hjemmeside til din virksomhed. Vi tilbyder professionelt webdesign og udvikling.">
   <title>TKagency</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -18,11 +18,11 @@
       background-color: #1e1e1e;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
       letter-spacing: 2px;
     }
     header p {
@@ -30,11 +30,27 @@
       font-weight: 300;
     }
     .main-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 50px;
+      text-align: center;
       background-color: #ffffff;
+    }
+    .section-title {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .service-card {
+      display: inline-block;
+      width: 30%;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
     }
     .cta-button {
       background-color: #ff6f61;
@@ -55,22 +71,37 @@
       padding: 20px;
       text-align: center;
     }
+    .portfolio img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Velkommen til TKagency</h1>
-  <p>Professionel digital markedsføring for din virksomhed</p>
+  <p>Vi hjælper dig med at skabe den perfekte hjemmeside for din virksomhed.</p>
 </header>
 
 <div class="main-content">
-  <button class="cta-button" onclick="window.location.href='https://www.tkahome.dk/kontakt';">Kontakt os nu</button>
+  <h2 class="section-title">Vores Services</h2>
+  <div class="service-card">
+    <h3>Webdesign</h3>
+    <p>Vi designer brugerdefinerede hjemmesider, der skaber et stærkt førstehåndsindtryk.</p>
+  </div>
+  <div class="service-card">
+    <h3>Udvikling</h3>
+    <p>Vi udvikler funktionelle og responsive hjemmesider, der fungerer på alle enheder.</p>
+  </div>
+  <div class="service-card">
+    <h3>Vedligeholdelse</h3>
+    <p>Vi sørger for, at din hjemmeside er opdateret og fungerer optimalt hele tiden.</p>
+  </div>
 </div>
 
-<footer>
-  <p>&copy; 2025 TKagency. Alle rettigheder forbeholdes.</p>
-</footer>
-
-</body>
-</html>
+<div class="main-content portfolio">
+  <h2 class="section-title">Vores Projekter</h2>
+  <div>
+    <img src="https:/
