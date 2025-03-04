@@ -16,7 +16,7 @@
             scroll-behavior: smooth;
         }
         body {
-            background-color: #121212;
+            background-color: #0a192f;
             color: white;
         }
         nav {
@@ -24,7 +24,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(10, 25, 47, 0.9);
             position: fixed;
             width: 100%;
             top: 0;
@@ -38,7 +38,7 @@
             transition: 0.3s;
         }
         nav a:hover {
-            color: #00aaff;
+            color: #64ffda;
         }
         header {
             height: 100vh;
@@ -47,7 +47,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(45deg, #005f99, #00aaff);
+            background: linear-gradient(45deg, #112240, #233554);
             position: relative;
             overflow: hidden;
         }
@@ -57,8 +57,8 @@
         }
         .animated-shape {
             position: absolute;
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             background-color: rgba(255, 255, 255, 0.2);
             border-radius: 50%;
             opacity: 0.5;
@@ -69,8 +69,8 @@
             50% { transform: translateY(-30px); }
         }
         .btn {
-            background: #fff;
-            color: #005f99;
+            background: #64ffda;
+            color: #0a192f;
             padding: 15px 30px;
             margin-top: 20px;
             border: none;
@@ -81,8 +81,7 @@
             transition: 0.3s;
         }
         .btn:hover {
-            background: #003f66;
-            color: white;
+            background: #52e0c4;
         }
         section {
             padding: 100px 50px;
@@ -92,23 +91,30 @@
             display: flex;
             justify-content: center;
             gap: 30px;
+            flex-wrap: wrap;
         }
         .card {
-            background: linear-gradient(45deg, #002244, #004488);
-            padding: 30px;
-            border-radius: 10px;
+            background: linear-gradient(45deg, #172a45, #223a5f);
+            padding: 40px;
+            border-radius: 15px;
             width: 30%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
             transition: 0.3s;
             color: white;
+            position: relative;
         }
         .card:hover {
             transform: scale(1.05);
-            background: linear-gradient(45deg, #004488, #0077cc);
+            background: linear-gradient(45deg, #223a5f, #3066be);
+        }
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
         }
         footer {
-            background: #000;
-            padding: 20px;
+            background: #112240;
+            padding: 30px;
             text-align: center;
         }
     </style>
@@ -132,14 +138,17 @@
         <h2>Vores Services</h2>
         <div class="services">
             <div class="card">
+                <img src="https://img.icons8.com/ios/50/ffffff/code.png" alt="Code">
                 <h3>Webdesign</h3>
                 <p>Vi skaber smukke og brugervenlige designs.</p>
             </div>
             <div class="card">
+                <img src="https://img.icons8.com/ios/50/ffffff/development-skill.png" alt="Development">
                 <h3>Udvikling</h3>
                 <p>Moderne og responsive hjemmesider.</p>
             </div>
             <div class="card">
+                <img src="https://img.icons8.com/ios/50/ffffff/seo.png" alt="SEO">
                 <h3>SEO & Marketing</h3>
                 <p>Vi optimerer din online tilstedeværelse.</p>
             </div>
@@ -150,12 +159,15 @@
         <h2>Vores Projekter</h2>
         <div class="portfolio">
             <div class="card">
+                <img src="https://img.icons8.com/ios/50/ffffff/domain.png" alt="Project 1">
                 <p>Projekt 1 - Business website</p>
             </div>
             <div class="card">
+                <img src="https://img.icons8.com/ios/50/ffffff/shopping-cart.png" alt="Project 2">
                 <p>Projekt 2 - E-commerce platform</p>
             </div>
             <div class="card">
+                <img src="https://img.icons8.com/ios/50/ffffff/portfolio.png" alt="Project 3">
                 <p>Projekt 3 - Portfolio site</p>
             </div>
         </div>
