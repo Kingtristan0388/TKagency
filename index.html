@@ -7,6 +7,7 @@
   <title>TKagency</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
+    /* Global styles */
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -14,30 +15,44 @@
       background-color: #f4f4f4;
       color: #333;
     }
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    /* Header */
     header {
-      background-color: #1e1e1e;
+      background: linear-gradient(45deg, #ff6f61, #ff9f55);
       color: white;
       text-align: center;
       padding: 60px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     header h1 {
       margin: 0;
-      font-size: 3em;
+      font-size: 3.5em;
       letter-spacing: 2px;
     }
     header p {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: 300;
     }
+
+    /* Main content */
     .main-content {
       padding: 50px;
-      text-align: center;
       background-color: #ffffff;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: -30px;
     }
+
     .section-title {
       font-size: 2.5em;
       margin-bottom: 20px;
+      color: #ff6f61;
     }
+
+    /* Service cards */
     .service-card {
       display: inline-block;
       width: 30%;
@@ -47,44 +62,70 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .service-card:hover {
       transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
+
+    /* Project section */
+    .portfolio {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .portfolio div {
+      width: 30%;
+      margin: 15px;
+      transition: transform 0.3s ease;
+    }
+    .portfolio div:hover {
+      transform: scale(1.05);
+    }
+    .portfolio img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .portfolio img:hover {
+      opacity: 0.8;
+    }
+
+    /* Call-to-action button */
     .cta-button {
       background-color: #ff6f61;
       color: white;
-      font-size: 1.1em;
+      font-size: 1.2em;
       padding: 15px 30px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease;
     }
     .cta-button:hover {
       background-color: #ff4d43;
     }
+
+    /* Footer */
     footer {
       background-color: #1e1e1e;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    .portfolio img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
   </style>
 </head>
 <body>
 
+<!-- Header -->
 <header>
   <h1>Velkommen til TKagency</h1>
   <p>Vi hjælper dig med at skabe den perfekte hjemmeside for din virksomhed.</p>
 </header>
 
+<!-- Main content -->
 <div class="main-content">
   <h2 class="section-title">Vores Services</h2>
   <div class="service-card">
@@ -101,7 +142,32 @@
   </div>
 </div>
 
+<!-- Portfolio Section -->
 <div class="main-content portfolio">
   <h2 class="section-title">Vores Projekter</h2>
   <div>
-    <img src="https:/
+    <img src="https://via.placeholder.com/400x250" alt="Projekteksempel 1">
+    <p>Projekt 1 - Hjemmeside for en lokal virksomhed.</p>
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/400x250" alt="Projekteksempel 2">
+    <p>Projekt 2 - E-handelsløsning med funktioner som kundelogin og betalingssystem.</p>
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/400x250" alt="Projekteksempel 3">
+    <p>Projekt 3 - Portfolio-site for kreative fagfolk.</p>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<div class="main-content">
+  <button class="cta-button" onclick="window.location.href='mailto:info@tkagency.dk';">Kontakt os nu</button>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 TKagency. Alle rettigheder forbeholdes.</p>
+</footer>
+
+</body>
+</html>
